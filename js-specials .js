@@ -5,3 +5,9 @@ console.log(x);*/
 
 //Interaction
 let myQuestion = prompt("How old are you" , "");
+
+if (myQuestion > 20){
+    alert("You are mature");
+}else {
+    alert("You're young");
+}
