@@ -56,7 +56,7 @@ for (let key in salaries){
 
 console.log(sum);*/
 
-let menu = {
+/*let menu = {
     width: 200,
     height: 300,
     title: "My menu"
@@ -68,7 +68,7 @@ function multiplyNumeric(menu){
             menu[key] = menu[key] * 2;
         }
     }
-};
+};*/
 
 
 
