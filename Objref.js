@@ -338,9 +338,22 @@ for (let values of map.entries()){
 
 // functions as values
 
-let myMap = new Map();
+/*let myMap = new Map();
 myMap.set(1, ()=> "Function1")
 .set(2, ()=> "Function2");
 
 console.log(myMap.get(1)());
-console.log(myMap.get(2)());
+console.log(myMap.get(2)()); */
+
+// Merging two maps
+let map1 = new Map();
+map1.set("x" , 10)
+    .set("y" , 20);
+
+let map2 = new Map();
+map2.set("y" , 40)
+    .set("z" , "50")
+
+const mergedMap = new Map([...map1,...map2]);
+
+console.log(mergedMap);
