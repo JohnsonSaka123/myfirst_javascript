@@ -346,7 +346,7 @@ console.log(myMap.get(1)());
 console.log(myMap.get(2)()); */
 
 // Merging two maps
-let map1 = new Map();
+/*let map1 = new Map();
 map1.set("x" , 10)
     .set("y" , 20);
 
@@ -356,4 +356,177 @@ map2.set("y" , 40)
 
 const mergedMap = new Map([...map1,...map2]);
 
-console.log(mergedMap);
+console.log(mergedMap);*/
+
+//the map method .map()
+
+/*const numbers = [1,2,3,4,5];
+const squares = numbers.map(square);
+console.log(squares);
+
+function square(element){
+    return Math.pow(element,2);
+}*/
+
+/*const students = ["Walker" , "Lucy" , "Prince"];
+
+ const UPPERCASE = students.map(upperCase);
+ console.log(UPPERCASE);
+
+ const LOWERCASE = students.map(lowerCase);
+ console.log(LOWERCASE);
+
+function upperCase(element){
+    return element.toUpperCase();
+}
+function lowerCase(element){
+    return element.toLowerCase();
+}*/
+
+
+/*let numbers = [1,2,3,4,5];
+
+let evenNumbers = numbers.filter(isEven);
+console.log(evenNumbers);
+
+let oddNumbers = numbers.filter(isOdd);
+console.log(oddNumbers);
+
+function isEven(element){
+    return element % 2 === 0;
+}
+
+function isOdd(element){
+    return element % 2 !== 0;
+} */
+
+//Object oriented programming
+// using the this function 
+/*const person1 = {
+    name : "Walker",
+    favFood : "Waakye",
+    sayHello : function(){console.log(`Hello, I'm ${this.name}.`);},
+    eat : function(){console.log(`${this.name} is eating ${this.favFood}`);}
+}
+person1.eat();*/
+
+//using constructor
+/*function Car(make, model,year,color){
+    this.make = make,
+    this.model = model,
+    this.year = year,
+    this.color = color
+    this.drive = function(){console.log(`You drive ${this.model}`)}
+}
+
+const car1 = new Car("Ford" , "Mustang" , 2024 ,"red");
+
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);
+
+car1.drive() */
+
+//classes in javascript
+
+/*class Product{
+    constructor(name , price){
+        this.name = name;
+        this.price = price;
+    }
+    displayProduct(){
+        console.log(`Product: ${this.name}`);
+        console.log(`Price: $${this.price}`);
+    }
+
+    calculateTotal(salesTax){
+        return this.price + (this.price * salesTax);
+    }
+}
+
+const salesTax = 0.05 ;
+const product1 = new Product("Shirt" , 19.99);
+product1.displayProduct();
+
+const total = product1.calculateTotal(0.05);
+console.log(`Total price(with tax): $${total.toFixed(2)}`);
+*/
+
+// static keyword
+
+/*class Mathutil{
+    static PI = 3.14159;
+
+    static getDiameter(radius){
+        return radius * 2;
+    }
+    static getCircumference(radius){
+        return 2 * this.PI* radius;
+    }
+    static getArea(radius){
+        return this.PI * radius * radius;
+    }
+}
+console.log(Mathutil.PI);
+console.log(Mathutil.getDiameter(10));
+console.log(Mathutil.getCircumference(10));
+console.log(Mathutil.getArea(10)); */
+
+// another example
+/*class User{
+    static userCount = 0;
+
+    constructor(username){
+        this.username = username;
+        User.userCount++;
+    }
+
+    static getUserCount(){
+        console.log(`There are ${User.userCount} users online`);
+    }
+
+    sayHello(){
+        console.log(`Hello , my username is ${this.username}`);
+    }
+}
+
+const user1 = new User("Walker");
+const user2 = new User("John");
+const user3 = new User("James");
+
+user1.sayHello();
+user2.sayHello();
+user3.sayHello();
+
+User.getUserCount(); */
+
+class Surgeon{
+  constructor(name,department ,remainingVacationDays){
+    this._name = name;
+    this._department = department;
+    this._remainingVacationDays = 20;
+  }
+  get name(){
+    return this._name;
+  }
+  get department(){
+    return this._department;
+  }
+  get remainingVacationDays(){
+    return this._remainingVacationDays;
+  }
+
+  takeVacationDays(daysOff){
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+const surgeonRomero = new Surgeon("Francisco Romero" , "Cardiovascular");
+
+const surgeonJackson = new Surgeon("Ruth Jackson" , "Orthopedics");
+
+console.log(surgeonRomero.name);
+console.log(surgeonRomero.department);
+surgeonRomero.takeVacationDays(5);
+console.log(surgeonRomero.remainingVacationDays);
