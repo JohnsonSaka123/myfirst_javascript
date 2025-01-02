@@ -501,7 +501,7 @@ user3.sayHello();
 
 User.getUserCount(); */
 
-class Surgeon{
+/*class Surgeon{
   constructor(name,department ,remainingVacationDays){
     this._name = name;
     this._department = department;
@@ -529,4 +529,45 @@ const surgeonJackson = new Surgeon("Ruth Jackson" , "Orthopedics");
 console.log(surgeonRomero.name);
 console.log(surgeonRomero.department);
 surgeonRomero.takeVacationDays(5);
-console.log(surgeonRomero.remainingVacationDays);
+console.log(surgeonRomero.remainingVacationDays);*/
+
+class HospitalEmployee{
+  constructor(name){
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+  get name(){
+    return this._name;
+  }
+  get remainingVacationDays(){
+    return this._remainingVacationDays;
+  }
+  takeVacationDays(daysOff){
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+class Doctor{
+  constructor(name ,insurance){
+    this._name = name;
+    this._remainingVacationDays = 20;
+    this._insurance = insurance;
+  }
+  takeVacationDays(){
+
+  }
+}
+
+class Nurse{
+  constructor(name ,certifications){
+    this._name = name;
+    this._remainingVacationDays = 20;
+    this._certifications = certifications;
+  }
+  takeVacationDays(){
+
+  }
+  addCertification(){
+
+  }
+}
