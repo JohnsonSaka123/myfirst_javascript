@@ -17,5 +17,14 @@ function isEven(){
 }
 
 let myNumberisEven = isEven();
+function handleSuccess(resolvedValue){
+  console.log(resolvedValue);  //"The number is even"
+}
+function handleFailure(rejectedReason){
+  console.log(rejectedReason);
+}
+isEven()
+.then(handleSuccess)
+.catch(handleFailure);
 console.log(myNumberisEven);
 
