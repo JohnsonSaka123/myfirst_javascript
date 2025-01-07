@@ -4,7 +4,7 @@
 
 let num = 2;
 
-function myExecutor(resolve,reject){
+/*function myExecutor(resolve,reject){
   if(num % 2 == 0){
     resolve("The number is even");
   }else{
@@ -26,5 +26,22 @@ function handleFailure(rejectedReason){
 isEven()
 .then(handleSuccess)
 .catch(handleFailure);
+console.log(myNumberisEven); */
+
+function isEven(){
+  return new Promise((resolve,reject) => {
+    if (num % 2 == 0){
+      resolve("The number is even");
+    }else{
+      reject("The number is odd");
+    }
+  });
+}
+
+isEven()
+.then((handleSuccess) => {console.log(handleSuccess)})
+.catch((handleError)  => {console.log(handleError)});
+
+let myNumberisEven = isEven();
 console.log(myNumberisEven);
 
