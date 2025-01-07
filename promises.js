@@ -1,4 +1,4 @@
-const inventory = {
+/*const inventory = {
   sunglasses: 1900,
   pants: 1088,
   bags: 1344
@@ -20,3 +20,15 @@ function orderSunglasses(){
 
 let orderPromise = orderSunglasses();
 console.log(orderPromise);
+
+*/
+
+//Uisng node setTimeout function 
+
+//setTimeout(callback, timeout(in milliseconds))
+
+function sayHello(){
+  console.log("Hello string!");
+}
+
+setTimeout(sayHello , 3000);
