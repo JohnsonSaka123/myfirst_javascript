@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appending</title>
+  <style>
+    #container{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p>Walker here</p>
+  </div>
+  <h1>Walker</h1>
+
+  <script>
+
+    // Appending a new element
+    let Myparent = document.getElementById("container");
+
+    let paragraph = document.createElement("p");
+
+    paragraph.textContent = "I'm a paragraph";
+
+    Myparent.appendChild(paragrah);
+  </script>
+</body>
+
+
+</html>

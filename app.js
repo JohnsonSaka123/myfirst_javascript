@@ -36,7 +36,7 @@ console.log(user.city);
 //     set propName(value){}
 // };
 
-let user = {
+/*let user = {
     name : "Johnson",
     surname : "Walker",
 
@@ -51,4 +51,11 @@ let user = {
 
 
 user.fullname = "Lucy Dumordzi";
-console.log(user.fullname);
+console.log(user.fullname); */
+
+function scaleByTwenty(num){
+    let power = 20 ;
+    return 
+    num * power ;
+    
+}
