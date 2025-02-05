@@ -16,6 +16,9 @@ let answer = people.sort((a,b) => a.age - b.age);
 
 let Mypeople = people.filter(person => person.age > 30) ;
 
-console.log(Mypeople);
+//console.log(Mypeople);
 
 // Create a new array that contains just the names of the people in the array.
+
+let NamesOfPeople = people.filter(person => person.name);
+console.log(NamesOfPeople);
