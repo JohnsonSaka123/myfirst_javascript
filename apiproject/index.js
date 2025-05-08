@@ -2,8 +2,8 @@ document.getElementById("load-users").addEventListener("click" , fetchUsers);
 
 async function fetchUsers(){
   try{
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    const users = await response.json();
+    let response = await fetch("https://jsonplaceholder.typicode.com/users");
+    let users = await response.json();
 
     // creating the list to contain the users
 
@@ -12,8 +12,8 @@ async function fetchUsers(){
 
     users.forEach( user => {
       
-      const li = document.createElement("li");
-      li.innerHTML = `${user.name} - ${user.email}`;
+      let li = document.createElement("li");
+      li.innerHTML = `<strong>${user.name}</strong> - ${user.email}`;
       userlist.appendChild(li);
     });
 
@@ -21,3 +21,5 @@ async function fetchUsers(){
     console.error('Error fetching users:', error);
   }
 };
+
+console.log("script is running....");

@@ -53,9 +53,14 @@ console.log(user.city);
 user.fullname = "Lucy Dumordzi";
 console.log(user.fullname); */
 
-function scaleByTwenty(num){
+/*function scaleByTwenty(num){
     let power = 20 ;
     return 
     num * power ;
     
-}
+}*/
+
+
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then(response => response.json())
+    .then(json => console.log(json));

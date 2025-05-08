@@ -73,3 +73,100 @@ function multiplyNumeric(menu){
 
 
 
+/*console.log(018 == '018');
+console.log(017 == '017');
+
+*/
+// Undefined 
+
+/*let myName = null;
+console.log(myName);*/
+
+/*function func(){
+
+}
+
+console.log(func())
+*/
+
+
+
+
+/*if (x){
+
+}else {
+    x
+}
+
+console.log(x) */
+
+
+
+/*console.log(undefined ==NaN);*/
+
+//console.log("Hello world");
+
+/*const user = {
+  name: "John",
+  age: 30,
+  address: {
+    city: "New York",
+    country: "USA"
+  }
+};
+
+const numbers = [1, 2, 3, 4, 5];
+
+//getting the name and city from the user object
+console.log(user.name);
+console.log(user.address.city);
+
+const updatedUser = {
+    ...user,
+    isAdmin : true
+}
+
+console.log(updatedUser);*/
+
+/*function sum(x,y){
+    return x+y;
+}
+console.log(sum(3,4));*/
+
+/*const grades = [ 1, 2, 3];
+grades.forEach((grade) => {
+    console.log(grade);
+})*/
+
+/*const names = ["walker" , "lucille"] ;
+
+const toUpperCase = names.map((name) => {
+    return name.toUpperCase();
+})
+
+console.log(toUpperCase);
+
+const numbers = [ 1, 3, 10, 38 , 56,78];
+
+const greater = numbers.filter((number) =>{
+    return number > 10 ;
+});
+
+console.log(greater);
+
+const users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+];
+
+const match = users.find((user) =>{
+    return user.id == 2 ;
+})
+console.log(match) */
+
+const fruits = ["mango", "orange", "banana"];
+
+const toBig = fruits.forEach((fruit) => console.log(fruit.toLowerCase()));
+
+console.log(toBig);
+
